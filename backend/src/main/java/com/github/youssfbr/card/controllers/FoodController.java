@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/foods")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class FoodController {
 
     private IFoodService foodService;

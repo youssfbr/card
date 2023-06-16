@@ -19,8 +19,14 @@ public class Food {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(length = 100, nullable = false)
     private String name;
+
+    @Column(columnDefinition = "text")
     private String image;
+
+    @Column(nullable = false)
     private BigDecimal price;
 
     public Food(FoodRequestDTO data) {

@@ -10,4 +10,6 @@ public record FoodResponseDTO(Long id, String name, String image, BigDecimal pri
         this(food.getId(), food.getName(), food.getImage(),food.getPrice());
     }
 
+
+
 }
